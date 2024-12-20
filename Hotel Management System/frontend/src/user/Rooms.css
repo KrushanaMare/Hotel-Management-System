@@ -1,0 +1,125 @@
+/* AvailableRooms.css */
+.room-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: space-between; /* Space between cards */
+    margin: 0 -8px; /* Adjust for padding */
+  }
+  
+  .room-card {
+    flex: 1 1 calc(33.333% - 16px); /* Three cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px; /* Space between cards */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background-color: #fff;
+  }
+  
+  .room-card:hover {
+    transform: scale(1.01);
+  }
+  
+  .room-card h3 {
+    margin: 0 0 8px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .room-card p {
+    margin: 4px 0;
+    color: #666;
+  }
+  
+  .room-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .room-card button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Booking.css */
+.booking-container {
+    max-width: 600px; /* Limit the width of the form */
+    margin: 20px auto; /* Center the form */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .booking-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .booking-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .booking-container input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .booking-container button {
+    width: 100%; /* Full width */
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .booking-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .booking-message {
+    margin-top: 15px;
+    text-align: center;
+    color: #28a745; /* Green color for success messages */
+  }
+
+  /* Rooms.css */
+.filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section select,
+  .filter-section input {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .filter-section button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filter-section button:hover {
+    background-color: #0056b3;
+  }
